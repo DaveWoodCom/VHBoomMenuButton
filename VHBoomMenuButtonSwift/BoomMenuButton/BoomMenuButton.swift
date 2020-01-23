@@ -523,7 +523,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     /// The order of animtions of boom-buttons when booming and rebooming.
     ///
     /// The default value is **random**.
-    public var orderEnum = OrderEnum.random
+    public var orderEnum: OrderEnum = OrderEnum.random
     
     /// How many frames should the booming and rebooming animations have.
     ///
