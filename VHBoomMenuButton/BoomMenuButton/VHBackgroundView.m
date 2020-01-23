@@ -114,7 +114,7 @@ static NSString *const kOpacityAnimation = @"kOpacityAnimation";
     }
     if ([self.subviews containsObject:view])
     {
-        view.removeFromSuperview;
+        [view removeFromSuperview];
     }
     [self.goneViews removeObject:view];
 }
