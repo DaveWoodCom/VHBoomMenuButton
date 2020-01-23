@@ -79,22 +79,20 @@ class AnimationManager: NSObject {
     }
     
     static func addAnimations(view: UIView?, key: String!, animations: CAAnimation...) {
-        guard view != nil else {
+        guard let view = view else {
             return
         }
-        if let view = view {
-            for (index, animation) in animations.enumerated() {
-                view.layer.add(animation, forKey: "\(key)_\(index)")
-            }
+        for (index, animation) in animations.enumerated() {
+            view.layer.add(animation, forKey: "\(key)_\(index)")
         }
     }
     
     static func addAnimation(animation: CAAnimation?, key: String!,  views: [UIView]?) {
-        guard animation != nil && views != nil else {
+        guard let animation = animation, let views = views else {
             return
         }
-        for view in views! {
-            view.layer.add(animation!, forKey: key)
+        for view in views {
+            view.layer.add(animation, forKey: key)
         }
     }
     
@@ -397,16 +395,13 @@ class AnimationManager: NSObject {
     }
     
     private static func addBufferValues(_ values: inout [CGFloat]) {
-        if values.last == 0 {
+        guard let last = values.last, last != 0 else {
             return
         }
-        guard values.last != 0 else {
-            return
-        }
-        values.append(values.last! * 0.5)
-        values.append(values.last! * 0.5)
-        values.append(values.last! * 0.5)
+
+        values.append(last * 0.5)
+        values.append(last * 0.5)
+        values.append(last * 0.5)
         values.append(0)
     }
-    
 }
