@@ -11,16 +11,16 @@
 /// - inOrder: In-order.
 /// - reverse: Reverse.
 /// - random: Random.
-public enum OrderEnum {
+public enum OrderEnum: Int {
     
     /// In-order.
-    case inOrder
+    case inOrder = 0
     /// Reverse.
     case reverse
     /// Random.
     case random
     
     static var count: Int {
-        return OrderEnum.random.hashValue + 1
+        return OrderEnum.random.rawValue + 1
     }
 }

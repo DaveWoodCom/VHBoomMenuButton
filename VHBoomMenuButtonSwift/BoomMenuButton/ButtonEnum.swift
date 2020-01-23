@@ -12,14 +12,14 @@
 /// - textOutsideCircle: Boom-button with an image and a text outside in a circular or a square shape.
 /// - ham: Boom-button with an image, a text and a sub-text inside in a rectangle shape.
 /// - unknown: Boom-button unknown.
-public enum ButtonEnum {
-    case simpleCircle
+public enum ButtonEnum: Int {
+    case simpleCircle = 0
     case textInsideCircle
     case textOutsideCircle
     case ham
     case unknown
     
     static var count: Int {
-        return ButtonEnum.ham.hashValue + 1
+        return ButtonEnum.ham.rawValue + 1
     }
 }

@@ -17,9 +17,9 @@
 /// - topRight: Top-right.
 /// - bottomLeft: Bottom-left.
 /// - bottomRight: Bottom-right.
-public enum ButtonPlaceAlignmentEnum {
+public enum ButtonPlaceAlignmentEnum: Int {
     
-    case center
+    case center = 0
     case top
     case bottom
     case left
@@ -30,6 +30,6 @@ public enum ButtonPlaceAlignmentEnum {
     case bottomRight
     
     static var count: Int {
-        return ButtonPlaceAlignmentEnum.bottomRight.hashValue + 1
+        return ButtonPlaceAlignmentEnum.bottomRight.rawValue + 1
     }
 }

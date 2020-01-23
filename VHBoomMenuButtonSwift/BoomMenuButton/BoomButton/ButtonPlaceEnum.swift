@@ -74,7 +74,7 @@ public enum ButtonPlaceEnum: Int {
     case unknown
     
     public static var count: Int {
-        return ButtonPlaceEnum.custom.hashValue + 1
+        return ButtonPlaceEnum.custom.rawValue + 1
     }
     
     public func buttonNumber() -> Int {
