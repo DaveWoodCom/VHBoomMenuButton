@@ -843,7 +843,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     private func initializeAttributes() {
         shadowPathRect = CGRect.init(x: 2, y: 2, width: frame.size.width - 4, height: frame.size.height - 4)
         if #available(iOS 8, *) {
-            blurEffect = UIBlurEffect.init(style: UIBlurEffectStyle.dark)
+            blurEffect = UIBlurEffect.init(style: UIBlurEffect.Style.dark)
         }
     }
     
@@ -851,7 +851,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
         UIDevice.current.beginGeneratingDeviceOrientationNotifications()
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.deviceOrientationDidChange(notification:)),
-                                               name: .UIDeviceOrientationDidChange,
+                                               name: UIDevice.orientationDidChangeNotification,
                                                object: nil)
     }
     
@@ -1694,7 +1694,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
                            delay: 0,
                            usingSpringWithDamping: 0.6,
                            initialSpringVelocity: 0.5,
-                           options: UIViewAnimationOptions.layoutSubviews,
+                           options: UIView.AnimationOptions.layoutSubviews,
                            animations: {
                             self.frame = newFrame
             }, completion: nil)

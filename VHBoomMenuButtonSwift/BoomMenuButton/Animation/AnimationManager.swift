@@ -24,7 +24,7 @@ class AnimationManager: NSObject {
         animation.duration = duration
         animation.values = values
         animation.isRemovedOnCompletion = false
-        animation.fillMode = kCAFillModeForwards
+        animation.fillMode = CAMediaTimingFillMode.forwards
         return animation
     }
     
@@ -50,7 +50,7 @@ class AnimationManager: NSObject {
         colorAnimation.fromValue = start.cgColor
         colorAnimation.toValue = end.cgColor
         colorAnimation.isRemovedOnCompletion = false
-        colorAnimation.fillMode = kCAFillModeForwards
+        colorAnimation.fillMode = CAMediaTimingFillMode.forwards
         colorAnimation.timingFunction = showColorAnimationFunction
         return colorAnimation
     }
@@ -66,7 +66,7 @@ class AnimationManager: NSObject {
         colorAnimation.fromValue = start.cgColor
         colorAnimation.toValue = end.cgColor
         colorAnimation.isRemovedOnCompletion = false
-        colorAnimation.fillMode = kCAFillModeForwards
+        colorAnimation.fillMode = CAMediaTimingFillMode.forwards
         colorAnimation.timingFunction = hideColorAnimationFunction
         return colorAnimation
     }

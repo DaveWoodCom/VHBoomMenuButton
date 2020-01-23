@@ -121,7 +121,7 @@ class ShareLinesView: UIView {
             processForLine1 = 1
             UIView.animate(withDuration: duration,
                            delay: 0,
-                           options: UIViewAnimationOptions.curveLinear,
+                           options: UIView.AnimationOptions.curveLinear,
                            animations: { 
                             self.processForLine1 = 0
             }, completion: nil)
@@ -130,7 +130,7 @@ class ShareLinesView: UIView {
             processForLine2 = 1
             UIView.animate(withDuration: duration,
                            delay: 0,
-                           options: UIViewAnimationOptions.curveLinear,
+                           options: UIView.AnimationOptions.curveLinear,
                            animations: {
                             self.processForLine2 = 0
             }, completion: nil)
@@ -143,7 +143,7 @@ class ShareLinesView: UIView {
             processForLine2 = 0
             UIView.animate(withDuration: duration,
                            delay: 0,
-                           options: UIViewAnimationOptions.curveLinear,
+                           options: UIView.AnimationOptions.curveLinear,
                            animations: {
                             self.processForLine2 = 1
             }, completion: nil)
@@ -152,7 +152,7 @@ class ShareLinesView: UIView {
             processForLine1 = 0
             UIView.animate(withDuration: duration,
                            delay: 0,
-                           options: UIViewAnimationOptions.curveLinear,
+                           options: UIView.AnimationOptions.curveLinear,
                            animations: {
                             self.processForLine1 = 1
             }, completion: nil)

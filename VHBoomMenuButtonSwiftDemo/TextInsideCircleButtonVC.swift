@@ -52,7 +52,7 @@ class TextInsideCircleButtonVC: BoomMenuButtonVC, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: TextInsideCircleButtonVC.identifier)
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: TextInsideCircleButtonVC.identifier)
+            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: TextInsideCircleButtonVC.identifier)
         }
         cell!.textLabel?.text = datas[indexPath.row]
         return cell!

@@ -166,7 +166,7 @@ class BackgroundView: UIView {
             }
             tipLabel.frame.origin.y = minY - buttonHeight / 2 - tipButtonMargin - tipLabel.frame.size.height
         }
-        bringSubview(toFront: tipLabel)
+        bringSubviewToFront(tipLabel)
     }
     
     // MARK: - Private Methods

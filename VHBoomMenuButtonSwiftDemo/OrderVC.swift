@@ -44,7 +44,7 @@ class OrderVC: BoomMenuButtonVC, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: OrderVC.identifier)
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: OrderVC.identifier)
+            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: OrderVC.identifier)
         }
         cell!.textLabel?.text = orderEnumNames[indexPath.row]
         return cell!

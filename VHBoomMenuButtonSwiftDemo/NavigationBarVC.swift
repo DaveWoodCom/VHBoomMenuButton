@@ -36,7 +36,7 @@ class NavigationBarVC: BoomMenuButtonVC {
             bmb2.addBuilder(BuilderManager.hamButtonBuilderWithDifferentPieceColor())
         }
         
-        let nagativeSpacer: UIBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        let nagativeSpacer: UIBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonItem.SystemItem.fixedSpace, target: nil, action: nil)
         nagativeSpacer.width = -16
         
         let bmbs: UIView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: 88, height: 44))

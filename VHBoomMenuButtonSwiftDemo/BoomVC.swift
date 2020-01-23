@@ -60,7 +60,7 @@ class BoomVC: BoomMenuButtonVC, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: BoomVC.identifier)
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: BoomVC.identifier)
+            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: BoomVC.identifier)
         }
         cell!.textLabel?.text = boomEnumNames[indexPath.row]
         return cell!

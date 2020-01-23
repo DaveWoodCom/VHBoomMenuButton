@@ -92,7 +92,7 @@ class ButtonPlaceAlignmentVC: BoomMenuButtonVC, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: ButtonPlaceAlignmentVC.identifier)
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: ButtonPlaceAlignmentVC.identifier)
+            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: ButtonPlaceAlignmentVC.identifier)
         }
         cell!.textLabel?.text = buttonPlaceAlignmentEnumNames[indexPath.row]
         return cell!

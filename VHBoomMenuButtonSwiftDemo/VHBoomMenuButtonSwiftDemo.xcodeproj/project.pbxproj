@@ -262,7 +262,7 @@
 					37B863B41EA8F94D00E53322 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = H7B6S6TRXA;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -499,7 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nightonke.VHBoomMenuButtonSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -516,7 +516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nightonke.VHBoomMenuButtonSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

@@ -52,7 +52,7 @@ class HamButtonVC: BoomMenuButtonVC, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: HamButtonVC.identifier)
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: HamButtonVC.identifier)
+            cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: HamButtonVC.identifier)
         }
         cell!.textLabel?.text = datas[indexPath.row]
         return cell!

@@ -230,7 +230,7 @@ public class BoomButton: UIView {
             addSubview(imageView!)
         }
         imageView?.frame = imageFrame
-        imageView?.contentMode = UIViewContentMode.center
+        imageView?.contentMode = UIView.ContentMode.center
     }
     
     func resetLabel() {
@@ -327,7 +327,7 @@ public class BoomButton: UIView {
         }
         normalImage = Utils.image(image: normalImage, newSize: imageSize)
         if normalImageTintColor != nil || highlightedImageTintColor != nil || unableImageTintColor != nil {
-            normalImage = normalImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            normalImage = normalImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         }
     }
     
@@ -341,7 +341,7 @@ public class BoomButton: UIView {
         }
         highlightedImage = Utils.image(image: highlightedImage, newSize: imageSize)
         if normalImageTintColor != nil || highlightedImageTintColor != nil || unableImageTintColor != nil {
-            highlightedImage = highlightedImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            highlightedImage = highlightedImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         }
     }
     
@@ -355,7 +355,7 @@ public class BoomButton: UIView {
         }
         unableImage = Utils.image(image: unableImage, newSize: imageSize)
         if normalImageTintColor != nil || highlightedImageTintColor != nil || unableImageTintColor != nil {
-            unableImage = unableImage?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            unableImage = unableImage?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         }
     }
     
