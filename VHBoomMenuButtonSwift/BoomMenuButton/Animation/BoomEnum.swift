@@ -38,4 +38,8 @@ public enum BoomEnum: Int {
     static var count: Int {
         return BoomEnum.random.hashValue + 1
     }
+
+    static func rand() -> BoomEnum {
+        return BoomEnum(rawValue: Int(arc4random()) % BoomEnum.random.rawValue + 1)!
+    }
 }

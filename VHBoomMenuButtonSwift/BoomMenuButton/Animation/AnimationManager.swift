@@ -204,7 +204,7 @@ class AnimationManager: NSObject {
                 offset += p
             }
         case .random:
-            calculateBoomXY(boomEnum: BoomEnum(rawValue: Int(arc4random()) % BoomEnum.random.rawValue)!,
+            calculateBoomXY(boomEnum: BoomEnum.rand(),
                             parentSize: parentSize,
                             ease: ease,
                             frames: frames,
