@@ -533,8 +533,8 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     /// The boom-enum of booming and rebooming animations. This property changes the track of the boom-buttons' movement.
     ///
     /// The default value is **horizontalThrow2**.
-    @IBInspectable public var boomEnum = BoomEnum.horizontalThrow2
-    
+    public var boomEnum: BoomEnum = BoomEnum.horizontalThrow2
+
     /// The name of the ease using in movement, scale and rotation animations of boom-buttons when booming. This property is used to change movement, scale and rotation animations' ease name with a line of code.
     ///
     /// Check Ease.swift to find all the ease-names supported by BMB.
