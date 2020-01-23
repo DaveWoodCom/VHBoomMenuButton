@@ -47,7 +47,7 @@ class BackgroundView: UIView {
     var tipLabel: UILabel {
         didSet {
             oldValue.removeFromSuperview()
-            if let index = goneViews.index(of: oldValue) {
+            if let index = goneViews.firstIndex(of: oldValue) {
                 goneViews.remove(at: index)
             }
             self.addGoneView(tipLabel)
@@ -146,7 +146,7 @@ class BackgroundView: UIView {
         if self.subviews.contains(goneView!){
             goneView!.removeFromSuperview()
         }
-        if let index = goneViews.index(of: goneView!) {
+        if let index = goneViews.firstIndex(of: goneView!) {
             goneViews.remove(at: index)
         }
     }

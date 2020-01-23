@@ -1809,7 +1809,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     ///
     /// - Parameter builder: Builder.
     public func removeBuilder(_ builder: BoomButtonBuilder) {
-        let index = boomButtonBuilders.index(of: builder)
+        let index = boomButtonBuilders.firstIndex(of: builder)
         if index != nil {
             removeBuilder(at: index!)
             setNeedsLayout()
@@ -1913,7 +1913,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     ///
     /// - Parameter view: The fade view.
     public func removeFadeView(_ view: UIView) {
-        if let index = fadeViews.index(of: view) {
+        if let index = fadeViews.firstIndex(of: view) {
             fadeViews.remove(at: index)
         }
         view.removeFromSuperview()
