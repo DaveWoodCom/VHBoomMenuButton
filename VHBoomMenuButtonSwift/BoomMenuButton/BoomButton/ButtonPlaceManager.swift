@@ -53,7 +53,7 @@ class ButtonPlaceManager: NSObject {
                     positions.append(CGPoint.init(x: +w + hm + CGFloat(i) * (w + hm), y: 0))
                 }
             }
-        case .vertical, .ham_1, .ham_2, .ham_3, .ham_3, .ham_4, .ham_5, .ham_6:
+        case .vertical, .ham_1, .ham_2, .ham_3, .ham_4, .ham_5, .ham_6:
             if buttonNumber % 2 == 0 {
                 for i in (0..<halfButtonNumber).reversed() {
                     positions.append(CGPoint.init(x: 0, y: -h_0_5 - vm_0_5 - CGFloat(i) * (h + vm)))
