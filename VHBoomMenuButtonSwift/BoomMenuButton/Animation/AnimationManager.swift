@@ -15,7 +15,7 @@ class AnimationManager: NSObject {
     
     // MARK: - Public Methods
     
-    static func animate(_ keyPath: String!,
+    static func animate(_ keyPath: String,
                         delay: CFTimeInterval,
                         duration: CFTimeInterval,
                         values: [Any]) -> CAKeyframeAnimation {
@@ -28,7 +28,7 @@ class AnimationManager: NSObject {
         return animation
     }
     
-    static func animate(_ keyPath: String!,
+    static func animate(_ keyPath: String,
                         delay: CFTimeInterval,
                         duration: CFTimeInterval,
                         ease: TimeInterpolator,
@@ -39,7 +39,7 @@ class AnimationManager: NSObject {
                                         values: AnimationManager.values(ease: ease, frames: frames, start: start, end: end))
     }
     
-    static func boomColorAnimation(_ KeyPath: String!,
+    static func boomColorAnimation(_ KeyPath: String,
                                    delay: CFTimeInterval,
                                    duration: CFTimeInterval,
                                    start: UIColor,
@@ -55,7 +55,7 @@ class AnimationManager: NSObject {
         return colorAnimation
     }
     
-    static func reboomColorAnimation(_ KeyPath: String!,
+    static func reboomColorAnimation(_ KeyPath: String,
                                      delay: CFTimeInterval,
                                      duration: CFTimeInterval,
                                      start: UIColor,
@@ -78,7 +78,7 @@ class AnimationManager: NSObject {
         return opacityAnimation
     }
     
-    static func addAnimations(view: UIView?, key: String!, animations: CAAnimation...) {
+    static func addAnimations(view: UIView?, key: String, animations: CAAnimation...) {
         guard let view = view else {
             return
         }
@@ -87,7 +87,7 @@ class AnimationManager: NSObject {
         }
     }
     
-    static func addAnimation(animation: CAAnimation?, key: String!,  views: [UIView]?) {
+    static func addAnimation(animation: CAAnimation?, key: String,  views: [UIView]?) {
         guard let animation = animation, let views = views else {
             return
         }
